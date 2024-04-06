@@ -1,17 +1,14 @@
 import math
 
-
 # generowanie wektora z wartosciami 1 o dlugosci N
 def jedynki_wektor(N):
     j = [[1] for _ in range(N)]
     return j
 
-
 #generowanie macierzy m x n wypelnionej zerami
 def zera_macierz(n, m):
      z = [[0 for _ in range(m)] for _ in range(n)]
      return z
-
 
 # implementacja mnozenia dwoch macierzy
 def mnozenie_macierzy(A, B):
@@ -23,7 +20,6 @@ def mnozenie_macierzy(A, B):
                     C[w][k] += A[w][m] * B[m][k]
     return C
 
-
 #implementacja odejmowania dwoch macierzy
 def odejmowanie_macierzy(A, B):
     C = zera_macierz(len(A), len(A[0]))
@@ -33,7 +29,6 @@ def odejmowanie_macierzy(A, B):
                 C[i][j] = A[i][j] - B[i][j]
     return C
 
-
 # wyliczenie normy residuum z wektora
 def norma_residuum(r):
     n = 0
@@ -42,7 +37,6 @@ def norma_residuum(r):
 
     wynik = math.sqrt(n)
     return wynik
-
 
 # generacja macierzy trojkatnych dolnej L i górnej U z macierzy współczynników
 def macierze_trojkatne_LU(A):
@@ -71,7 +65,6 @@ def macierze_trojkatne_LU(A):
             L[j][i] = (1/U[i][i]) * (A[j][i] - sum2)
 
     return L, U
-
 
 # generacja kopii macierzy
 def przypisz_macierz_pomocnicza(A):
