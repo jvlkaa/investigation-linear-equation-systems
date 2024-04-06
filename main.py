@@ -37,7 +37,6 @@ def stworz_A(a1, n):
 
     return A
 
-
 # rozwiazanie ukladu rownan metoda Jacobiego
 def B_metoda_iteracyjna_Jacobiego(n):
     # Ax = b
@@ -93,7 +92,6 @@ def B_metoda_iteracyjna_Jacobiego(n):
         plt.figure()
 
     return liczba_iteracji
-
 
 # rozwiazanie ukladu rownan metoda Gaussa Seidela
 def  B_metoda_iteracyjna_Gaussa_Seidela(n):
@@ -153,7 +151,6 @@ def  B_metoda_iteracyjna_Gaussa_Seidela(n):
         plt.figure()
 
     return liczba_iteracji
-
 
 # rozwiazanie ukladu rownan metoda faktoryzacji LU
 def metoda_faktoryzacji_LU():
