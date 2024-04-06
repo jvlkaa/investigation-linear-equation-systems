@@ -18,4 +18,4 @@ Matplotlib was used to present some of the results. Basic operations such as mat
 3. Install needed library - matplotlib.
 4. Run the project.
 
-Open `report.pdf` to see the results of the investigation.
+Open `report_solving_sets_of_equations.pdf` to see the results of the investigation.
